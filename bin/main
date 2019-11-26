@@ -2,14 +2,30 @@
 
 puts "Player1 Enter Your Name:"
 
-player1=gets.chomp
+player1 = gets.chomp
 
 puts "Player2 Enter Your Name:"
 
-player2=gets.chomp
+player2 = gets.chomp
 
 puts "------------------"
 puts "     1 2 3"
 puts "     4 5 6"
-puts "     7 8 8"
+puts "     7 8 9"
 puts "------------------"
+
+puts "#{player1} make a move"
+# The move is displayed on the board with an X
+
+puts "#{player2} make a move"
+# The move is displayed on the board with an O
+
+# Player1 and Player2 continues until: 
+# one of the players is able to align three X or O diagonal, vertically or horizontal
+# it is a tie when there is no possible moves left
+
+# puts "PlayerX wins" if it is a win
+# puts "It is a tie" if it is a a tie
+
+# Prompt the players if they want an new game
+# new_game = Game.new
