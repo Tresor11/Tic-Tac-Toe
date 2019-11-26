@@ -1,3 +1,15 @@
 #!/usr/bin/env ruby
 
-puts "Hello World!"
+puts "Player1 Enter Your Name:"
+
+player1=gets.chomp
+
+puts "Player2 Enter Your Name:"
+
+player2=gets.chomp
+
+puts "------------------"
+puts "     1 2 3"
+puts "     4 5 6"
+puts "     7 8 8"
+puts "------------------"
