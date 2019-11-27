@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require './lib/logic.rb'
+require_relative './../lib/logic.rb'
 
 class UI
   def initialize
