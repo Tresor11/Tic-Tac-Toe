@@ -9,9 +9,11 @@ class UI
     begin
       puts 'Player 1, enter your name:'
       players[0] = gets.chomp
+      puts "please enter a valid name!!" if players[0].length < 2
       puts `clear`
       puts 'Player 2, enter your name:'
       players[1] = gets.chomp
+      puts "please enter a valid name!!" if players[1].length < 2
       puts `clear`
     rescue StandardError => e
       puts "Invalid name given #{e}"
@@ -56,7 +58,7 @@ class UI
         @run.play_again
         return game
       elsif ans.to_sym== :n
-         "See you later"
+         puts "See you later"
       else
         puts "Invalid option!!!!! come back anytime :)"
       end
