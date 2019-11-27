@@ -26,6 +26,8 @@ Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
+Style/WhileUntilModifier:
+  Enabled: false
 
 Layout/AlignHash:
   EnforcedColonStyle: key
