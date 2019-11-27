@@ -58,7 +58,7 @@ class UI
         @run.play_again
         return game
       elsif ans.to_sym== :n
-         puts "See you later"
+        puts "See you later"
       else
         puts "Invalid option!!!!! come back anytime :)"
       end
