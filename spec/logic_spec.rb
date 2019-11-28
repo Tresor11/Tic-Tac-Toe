@@ -86,7 +86,7 @@ RSpec.describe Logic do
 
       next unless x == 9
 
-      it 'Checks win condition on first row' do
+      it 'Checks win condition on first row ' do
         expect(run7.game_end).to be_truthy
       end
     end
