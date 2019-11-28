@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative './../lib/logic.rb'
+require_relative './../lib/interface.rb'
 
 name1=nil
 name2=nil

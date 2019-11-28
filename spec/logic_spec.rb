@@ -9,7 +9,7 @@ RSpec.describe Logic do
       it 'return true if the moves are correct' do
         expect(run.move(x)).to eql(true)
       end
-      it 'return false if the move are not vailable' do
+      it 'return false if the move are not available' do
         expect(run.move(x + 9)).to eql(false)
       end
     end
@@ -120,6 +120,20 @@ RSpec.describe Logic do
     it 'Checks if the current player is the second one' do
       run10.game_end
       expect(run10.current_player).to eql('P2')
+    end
+  end
+
+  describe '#play_again' do
+    run11 = Logic.new('a', 'b')
+    it 'Returns the original board if user selects true' do
+      expect(run11.play_again).to be_truthy
+    end
+  end
+
+  describe '#initialize' do
+    run12 = Logic.new('a', 'b')
+    it 'Returns true if the inputs are a string' do
+      expect(run12).to be_truthy
     end
   end
 end
