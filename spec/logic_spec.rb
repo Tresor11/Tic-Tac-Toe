@@ -10,7 +10,7 @@ RSpec.describe Logic do
         expect(runx.move(x)).to eql(true)
       end
       it 'return false if the move are not available' do
-        expect(runx.move(x * 9)).to eql(false)
+        expect(runx.move(x * 10)).to eql(false)
       end
       it 'return false if the selsected move in not wuthin the range' do
         expect(runx.move(x - 10)).to be_falsey
